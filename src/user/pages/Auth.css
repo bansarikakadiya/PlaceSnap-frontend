@@ -1,17 +1,23 @@
 .authentication__header {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .authentication {
-    width: 100%;
-    max-width:25rem;
-    margin: 0 auto;
-    margin-top: 30vh;
-    text-align: center;
+  width: 100%;
+  max-width: 25rem;
+  margin: auto;
+  text-align: center;
 }
 
 .authentication form {
-    margin-bottom: 1rem;
-    
+  margin-bottom: 1rem;
+}
+
+/* Center the login card */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
