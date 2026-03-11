@@ -1,0 +1,17 @@
+.card {
+  position: relative;
+  margin: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  background: white;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* CENTER helper (important for "No place found" screen) */
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

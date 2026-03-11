@@ -1,0 +1,49 @@
+.side-drawer {
+  position: fixed;
+  left: 0;
+  padding-top: 30px;
+  top: 0;
+  z-index: 200;
+  height: 60vh;
+  width: 50%;       
+  max-width: 400px;
+  background: white;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.26);
+  
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* START POSITION */
+.slide-in-left-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* ENTER ANIMATION */
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 300ms ease-out;
+}
+
+/* EXIT POSITION */
+.slide-in-left-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* EXIT ANIMATION */
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 300ms ease-in;
+}

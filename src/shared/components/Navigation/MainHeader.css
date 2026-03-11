@@ -1,0 +1,29 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4rem;
+
+  background: #0c3f75;
+  display: flex;
+  align-items: center;
+
+  padding: 0 1rem;
+  box-sizing: border-box;   /* 🔥 MOST IMPORTANT */
+
+  z-index: 10;
+  overflow: hidden;         /* 🔥 x + y dono */
+}
+
+/* page content header ke neeche aaye */
+main {
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    justify-content: space-between;
+  }
+}

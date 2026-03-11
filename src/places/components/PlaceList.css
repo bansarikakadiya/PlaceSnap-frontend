@@ -1,0 +1,12 @@
+.place-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  max-width: 40rem;
+  margin-top: 10rem;
+}
+
+.place-list.center {
+  height: 100%;
+}

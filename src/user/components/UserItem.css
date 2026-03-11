@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  overflow-x: hidden;
+}
+
+.user-item {
+  list-style: none;
+  width: 100%;
+  max-width: 22rem;
+  margin: 1rem auto;   /* 🔥 CENTER + no overflow */
+  box-sizing: border-box;
+  background: rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.user-item:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.user-item img {
+  transition: transform 0.3s ease;
+}
+
+.user-item:hover img {
+  transform: scale(1.1);
+}
+
+.user-item:hover h2 {
+  color: orange;
+}
+
+/* Black card */
+.user-item__content {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Avatar + text side by side */
+.user-item__content a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.user-item__content:hover {
+  transform: translateY(-2px);
+  background: #c28d38;         /* yellow background */
+  box-shadow: 0 0 12px rgba(25, 24, 24, 0.7);
+}
+.user-item__content:hover h2,
+.user-item__content:hover h3 {
+  color: #000;
+}
+
+/* Text */
+.user-item__info h2 {
+  margin: 0;
+  color: #f8c55a;
+  font-size: 1.2rem;
+}
+
+.user-item__info h3 {
+  margin: 0.2rem 0 0;
+  color: rgb(140, 139, 139);
+  font-weight: normal;
+}
